@@ -8,7 +8,7 @@ const Navbar = () => {
 
         <input
           type="search"
-          class="search__input"
+          className="search__input"
           placeholder="Search for the college"
         />
         <ul>
