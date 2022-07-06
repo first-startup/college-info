@@ -11,7 +11,7 @@ const Card = (props) => {
         />
       </div>
       <div className="card-content">
-        <h2 className="card-name">{props.name}</h2>
+        <h2 className="card-name">{props.name}<small className="card-cllg">:{props.cllgName}</small></h2>
         <p className="card-desc">{props.description}</p>
         <div className="card-tags">
           <div className="tag">{props.tag1}</div>
