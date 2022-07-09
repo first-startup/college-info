@@ -46,10 +46,15 @@ function App() {
     setSearchTerm(searchTerm);
     if(searchTerm !== ""){
       const filteredStartups = startups.filter(startup => {
-        return Object.values(startup)
-        .join(" ")
-        .toLowerCase()
-        .includes(searchTerm.toLowerCase());
+
+        // Search related to startup name or college name
+        return startup.cllgName.toLowerCase().includes(searchTerm.toLowerCase()) || startup.name.toLowerCase().includes(searchTerm.toLowerCase());
+
+        // Search related to the whole object
+        // return Object.values(startup)
+        // .join(" ")
+        // .toLowerCase()
+        // .includes(searchTerm.toLowerCase());
       });
       setFilteredStartups(filteredStartups);
     }
