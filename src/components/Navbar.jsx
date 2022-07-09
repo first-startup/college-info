@@ -16,7 +16,7 @@ const Navbar = (props) => {
           ref={inputEl}
           type="search"
           className="search__input"
-          placeholder="Search for the college"
+          placeholder="Search for the college or startup"
           value={props.term}
           onChange={getSearchTerm}
         />

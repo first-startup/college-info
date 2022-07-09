@@ -1,0 +1,14 @@
+.tagBox {
+    width: max-content;
+    height: max-content;
+    color: white;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#selectTag {
+    cursor: pointer;
+}
